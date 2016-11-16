@@ -1,0 +1,11 @@
+<ion-view view-title="Fiction">
+   <ion-content>
+       <ion-list>
+           <ion-item ng-repeat='books in category' class="list card">
+               <h1>{{books.title}}</h1>
+                <img class="item item-image" src="{{books.image}}">
+                <button ui-sref="tab.fiction.id({book_id: books._id})" ui-sref-active="active" class="button button-outline button-royal">Details</button>
+           </ion-item>
+       </ion-list>
+   </ion-content>
+</ion-view>

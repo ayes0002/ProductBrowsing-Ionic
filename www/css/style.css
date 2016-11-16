@@ -1,0 +1,13 @@
+ion-item {
+    text-align: center;
+}
+
+.stars {
+    font-size: 4em;
+}
+
+.item-image{
+    display: block;
+    margin: auto !important;
+    margin-bottom: 1em !important;
+}

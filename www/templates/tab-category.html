@@ -1,0 +1,11 @@
+<main ng-controller="CategoryCtrl" class="category">
+    <button type="button" class="btn btn-default back" ui-sref="categories">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+    </button>
+    <div ng-repeat='books in category' class="multCategory">
+        <h2>{{books.title}}</h2>
+        <img src="{{books.image}}">
+        <button ui-sref="category.info({id: books._id})" ui-sref-active="active" class="btn btn-primary btn-med details">Details</button>
+    </div>
+    <ui-view></ui-view>
+</main>

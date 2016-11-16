@@ -1,0 +1,15 @@
+<ion-view view-title='Book'>
+   <ion-content>
+       <ion-list>
+           <ion-item>
+                <h1 class="head">{{book.title}}</h1><br>
+                <h3>Price: {{book.price}}$</h3><br>
+                <h3>Rating: </h3><ionic-ratings ratingsobj='ratingsObject' class= 'stars'></ionic-ratings><br><br>
+                <h2>Short Description</h2><br>
+                <p>{{book.short_description}}</p><br>
+                <h2>Long Description</h2><br>
+                <p>{{book.long_description}}</p>
+           </ion-item>
+       </ion-list>
+   </ion-content>
+</ion-view>

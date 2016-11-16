@@ -1,0 +1,6 @@
+<main ng-controller="CategoriesCtrl">
+    <div ng-repeat="item in items" class="multCategories">
+        <h2>{{item.title}}</h2>
+        <img src='{{item.image}}'ui-sref="category({productId: item._id})" ui-sref-active="active">
+    </div>
+</main>
